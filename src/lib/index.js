@@ -1,7 +1,7 @@
 // place files you want to import through the `$lib` alias in this folder.
 
 // CSS files
-export { default as style } from './assets/style.css'
+// export { default as style } from './assets/style.css'
 
 // SVG images (as components)
 export { default as hvalogo } from './assets/hvalogo.svelte'

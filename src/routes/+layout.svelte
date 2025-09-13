@@ -1,5 +1,5 @@
 <script>
-	import { style } from '$lib'
+	import '$lib/assets/style.css'
 	import { extractName } from '$lib/utils/extractName'
 	import {enhance} from '$app/forms'
 	import favicon from '$lib/assets/favicon.png'
