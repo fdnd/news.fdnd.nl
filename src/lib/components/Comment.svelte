@@ -1,5 +1,5 @@
 <script>
-  import { timeAgo } from "$lib/utils/timeago.js";
+  import { timeAgo } from "../utils/timeago.js";
   import { Comment } from "$lib";
   const { comment } = $props()
 </script>
