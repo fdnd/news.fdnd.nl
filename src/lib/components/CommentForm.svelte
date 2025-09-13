@@ -1,6 +1,6 @@
 <script>
-  import { timeAgo } from '$lib/utils/timeago'
-  import { extractName } from '$lib/utils/extractName'
+  import { timeAgo } from '../utils/timeAgo'
+  import { extractName } from '../utils/extractName.js'
   import { CommentForm, NewsLink } from '$lib';
   // TODO: edit existing comment
   const { link, replyto } = $props()
