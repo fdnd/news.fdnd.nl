@@ -1,0 +1,92 @@
+/* MARK: Variables
+*/
+:root {
+  --grey: #ececec;
+  --purple: #a675f5;
+  --blue: #050542;
+  --blue-50: rgba(5, 5, 66, 0.5);
+  --green: #66e5bf;
+  --yellow: #fffc86;
+  --angle: 42deg;
+
+  --base-color: var(--purple);
+  --background: var(--grey);
+  --color: var(--blue);
+  --button-color: var(--grey);
+
+  --accent-color-1: var(--purple);
+  --accent-color-2: var(--green);
+  --accent-color-3: var(--yellow);
+
+  --accent-color-1-rgb: 166, 117, 245;
+
+  --grid-1: 100vw / 24;
+  --grid-1-calc: calc(var(--grid-1));
+  --padding: clamp(1rem, var(--grid-1-calc), 5rem);
+
+  --small-radius: 0.5rem;
+  --section-width: calc(100vw - 3rem);
+  --max-width: 117rem;
+  --radius: 1.5rem;
+
+  --calc-side: calc((100vw - var(--max-width)) / 2);
+}
+
+/* MARK: Reset
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* MARK: Colors and type
+*/
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: var(--base-color);
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--color);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.25rem, calc(24 / 60 * var(--grid-1)), 2rem);
+  letter-spacing: -0.04em;
+  line-height: 1.33;
+}
+
+h1 {
+  font-size: clamp(2.5rem, calc(64 / 60 * var(--grid-1)), 5rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: clamp(2rem, calc(52 / 60 * var(--grid-1)), 4.375rem);
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+h3 {
+  font-size: clamp(1.5rem, calc(40 / 60 * var(--grid-1)), 3.25rem);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: clamp(1rem, calc(18 / 60 * var(--grid-1)), 1.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
