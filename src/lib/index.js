@@ -8,8 +8,8 @@ export { default as hvalogo } from './assets/hvalogo.svelte'
 export { default as hvapayoff } from './assets/hvapayoff.svelte'
 
 // Utils?
-export { default as extractName } from './utils/extractName.js'
-export { default as timeAgo } from './utils/timeago.js'
+// export { default as extractName } from './utils/extractName.js'
+// export { default as timeAgo } from './utils/timeago.js'
 // export { * } from './utils/auth.js'
 
 // Components
