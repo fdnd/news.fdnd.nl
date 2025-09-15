@@ -8,10 +8,11 @@ A [Hacker News](https://news.ycombinator.com/news) like link aggregator for [fro
 
 We're using this project to demonstrate our students how to work with Svelte(kit). We'll show how we use the following principles in our codebase:
 
-- File-based routing
-- Using layouts
-- Load functions
-- Reactive Declarations
-- Runes
-- Working with components
-- Forms and Actions
+- [File-based routing](https://github.com/fdnd/news.fdnd.nl/tree/main/src/routes)
+- [Using layouts](https://github.com/fdnd/news.fdnd.nl/blob/main/src/routes/%2Blayout.svelte)
+- [Load functions](https://github.com/fdnd/news.fdnd.nl/blob/main/src/routes/%2Bpage.server.js)
+- [Working with components](https://github.com/fdnd/news.fdnd.nl/tree/main/src/lib/components)
+- [Runes](https://svelte.dev/docs/svelte/what-are-runes)
+- [Reactivity](https://github.com/fdnd/news.fdnd.nl/blob/main/src/routes/%5Buuid%5D/%2Bpage.svelte)
+- [Forms](https://github.com/fdnd/news.fdnd.nl/blob/main/src/routes/%5Buuid%5D/%2Bpage.svelte) and [Actions](https://github.com/fdnd/news.fdnd.nl/blob/main/src/routes/%5Buuid%5D/%2Bpage.server.js)
+

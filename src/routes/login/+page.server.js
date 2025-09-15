@@ -16,7 +16,6 @@ export const actions = {
     } catch (error) {
       return fail(500, { email, error: 'Error sending magic link:', error })
     }
-
     return { success: true }
   },
 }

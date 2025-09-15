@@ -4,13 +4,26 @@
   let {data} = $props()
   const link = data.link
   const user = data.user
-  const replyto = link.comments.find(comment => comment.id == data.replyto)
+  // Via @OrakMoya @ https://github.com/sveltejs/kit/issues/11116
+  let replyto = $state(link.comments.find(comment => comment.id == data.replyto))
+  $effect(() => {
+		replyto = link.comments.find(comment => comment.id == data.replyto);
+	});
+  
   const comments = render(link.comments)
 
+  /**
+   * Comments are inserted as flat array, this recursive function sorts the
+   * comments adhering reply structure and returns a multi-dimensional array
+   * ready to be sent to our comment component.
+   * @param comments - a flat array containing comments loaded from the CMS
+   * @param parent (=null) - the id of the parent
+   * @return a multi dimeansional array of comments adhering reply structure
+   */
   function render(comments, parent=null){
     return comments
       .filter(comment => (comment.parent == parent || comment.parent?.id === parent))
-      .map(comment => {return {...comment, comments:render(comments, comment.id)}})
+      .map(comment => {return {...comment, comments: render(comments, comment.id)}})
   }
 </script>
 

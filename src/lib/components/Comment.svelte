@@ -12,7 +12,8 @@
 
   {comment.comment}
   
-  <a href="?replyto={comment.id}" data-sveltekit-reload>reply</a>
+  <a href="?replyto={comment.id}">reply</a>
+  
   {#if comment.comments}
     {#each comment.comments as comment}
     <Comment {comment} />

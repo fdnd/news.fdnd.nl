@@ -30,29 +30,6 @@ export async function load({ cookies, params, url }) {
   const user = session ? JSON.parse(session).email : null // slug parameter
   const replyto = url.searchParams.get('replyto') // url parameter
 
-  /* REST manier (nb: rest bij de import functie zetten)
-  const client = createDirectus('https://fdnd.directus.app').with(rest())
-  const result = await client.request(
-    readItems('link', {
-      filter: { id: { _eq: params.uuid } },
-      sort: ['votes'],
-      fields: [
-        'id', 
-        'date_created', 
-        'date_updated', 
-        'title', 
-        'url', 
-        'email', 
-        'votes',
-        'votes.*',
-        'comments',
-        'comments.*'
-      ],
-    })
-  )
-  // */
-
-  //* GraphQL manier
   const client = createDirectus('https://fdnd.directus.app').with(graphql())
   const result = await client.query(`
     query {
@@ -79,7 +56,6 @@ export async function load({ cookies, params, url }) {
       }
     }
   `)
-  // */
 
   // console.log(result)
   // console.log('---')

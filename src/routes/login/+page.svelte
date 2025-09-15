@@ -12,14 +12,14 @@
 <h2>Login</h2>
 
 <form method="post" use:enhance onsubmit={submitHandler}>
-  <input type="email" name="email" id="email" placeholder="Enter your email" required>
+  <input type="email" name="email" id="email" placeholder="Enter your @hva.nl email" required>
   <button type="submit">Send Magic Link</button>
 </form>
 
 {#if form?.success}
-  <p>Magic link sent! Check your email.</p>
+  <p>Magic link sent! Check your email and click the link to authenticate.</p>
 {:else if form?.invalid}
-  <p>Invalid email. Please try again.</p>
+  <p>Invalid email, please try again. Note that only @hva.nl emails are allowed</p>
 {:else if form?.error}
   <p>{form.error}</p>
 {/if}

@@ -15,8 +15,7 @@
 
 <style>
   ol {
-    margin: 0;
-    padding: 0;
+    /* padding: 0; */
   }
   ol li {
     margin-bottom: .5em;
