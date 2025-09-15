@@ -39,8 +39,8 @@
 	{@render children?.()}
 </main>
 
-<div class="todo">
-	<h2>Todo</h2>
+<details class="todo">
+	<summary>Todo</summary>
 	<ul>
 		<li>[x] overzicht van links</li>
 		<li>[x] koppelen van comments</li>
@@ -55,7 +55,7 @@
 		<li>[ ] (optioneel) leaderboard van top 10 post/comment/vote</li>
 		<li>[ ] (optioneel) moderatie van aangedragen links</li>
 	</ul>
-</div>
+</details>
 
 <footer>
 	<p><span>&copy;</span> Copyleft 2025, all wrongs reversed.</p>
@@ -112,8 +112,13 @@
 	.todo {
 		margin: calc(var(--radius) + var(--padding));
 		padding: var(--padding-side) 0;
-		
-		& ul {
+		summary {
+			font-weight: 600;
+			&:after {
+				content: ':';
+			}
+		}
+		ul {
 			padding: 0;
 			list-style: none;
 		}
