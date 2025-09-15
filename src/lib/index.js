@@ -4,8 +4,9 @@
 // export { default as style } from './assets/style.css'
 
 // SVG images (as components)
-export { default as hvalogo } from './assets/hvalogo.svelte'
-export { default as hvapayoff } from './assets/hvapayoff.svelte'
+export { default as Hvalogo } from './assets/hvalogo.svelte'
+export { default as Hvapayoff } from './assets/hvapayoff.svelte'
+export { default as Logo } from './assets/logo.svelte'
 
 // Utils?
 // export { default as extractName } from './utils/extractName.js'

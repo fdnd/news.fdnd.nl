@@ -4,7 +4,7 @@
   let {data} = $props()
   const link = data.link
   const user = data.user
-  // Via @OrakMoya @ https://github.com/sveltejs/kit/issues/11116
+  // Hack via @OrakMoya @ https://github.com/sveltejs/kit/issues/11116
   let replyto = $state(link.comments.find(comment => comment.id == data.replyto))
   $effect(() => {
 		replyto = link.comments.find(comment => comment.id == data.replyto);

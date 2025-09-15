@@ -1,5 +1,6 @@
 <script>
 	import '$lib/assets/style.css'
+	import { Logo } from '$lib'
 	import { extractName } from '$lib/utils/extractName'
 	import {enhance} from '$app/forms'
 	import favicon from '$lib/assets/favicon.png'
@@ -11,8 +12,7 @@
 </svelte:head>
 
 <header>
-	
-	<h1><a href="/">news.fdnd.nl</a></h1>
+	<a href="/"><Logo /></a>
 
 	<nav>
 		<ul>
@@ -49,9 +49,10 @@
 		<li>[x] formulier voor toevoegen van link/opschrift</li>
 		<li>[x] formulier voor het toevoegen van comments</li>
 		<li>[x] correcte recursieve weergave van comments</li>
-		<li>[ ] filtering en opslaan van filtering in localstorage</li>
-		<li>[ ] leaderboard van top 10 posters/ commenters/ voters</li>
+		<li>[ ] sorteren en opslaan van sortering in localstorage</li>
 		<li>[ ] API / RSS voor nieuwsberichten</li>
+		<li>[ ] Iets doen aan de layout T.T</li>
+		<li>[ ] (optioneel) leaderboard van top 10 post/comment/vote</li>
 		<li>[ ] (optioneel) moderatie van aangedragen links</li>
 	</ul>
 </div>
@@ -66,6 +67,9 @@
 		justify-content: space-between;
 		padding: 1.5rem 0 1rem var(--padding);
 		margin: var(--radius);
+	}
+	header > a {
+		width: 5em;
 	}
 
 	nav {
@@ -106,7 +110,7 @@
 	}
 
 	.todo {
-		margin: calc(var(--radius));
+		margin: calc(var(--radius) + var(--padding));
 		padding: var(--padding-side) 0;
 		
 		& ul {

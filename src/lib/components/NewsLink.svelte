@@ -3,7 +3,7 @@
   const urlRegExp = /^(?:http(?:s?):\/\/(?:www\.)?)?([A-Za-z0-9_:.-]+)\/?/
 </script>
 
-<a href="{link.url}">{link.title}</a>
+<a href="{link.url}" target="_blank">{link.title}</a>
 <span>({link.url.match(urlRegExp)[1]})</span>
 
 <style>

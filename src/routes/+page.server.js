@@ -17,7 +17,7 @@ export async function load() {
 
   // GraphQL manier
   const client = createDirectus('https://fdnd.directus.app').with(graphql())
-  const result = await client.query(`
+  let { link } = await client.query(`
     query {
       link {
         id
@@ -37,5 +37,21 @@ export async function load() {
     }
   `)
 
-  return { link: result.link }
+  // Sorting functions
+  let numberOfHearts = (a, b) => {
+    if (a.votes.length > b.votes.length) {
+      return -1
+    } else if (a.votes.length < b.votes.length) {
+      return 1
+    }
+    return 0
+  }
+  let numberOfComments = (a, b) => {
+    return a.comments.length > b.comments.length
+  }
+
+  link = link.sort(numberOfHearts)
+  // console.log(link)
+
+  return { link }
 }
