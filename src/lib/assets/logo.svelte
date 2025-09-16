@@ -1,3 +1,8 @@
+<script>
+  // check op datum,
+  // op 1 april
+</script>
+
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 316" fill="none">
   <title>FDND-News</title>

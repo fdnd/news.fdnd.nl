@@ -1,4 +1,4 @@
-import { createDirectus, graphql, readItems } from '@directus/sdk'
+import { createDirectus, graphql } from '@directus/sdk'
 
 export const actions = {
   logout: async ({ cookies }) => {
@@ -9,10 +9,13 @@ export const actions = {
 
 export async function load() {
   /* REST manier
-  const client = createDirectus('https://fdnd.directus.app').with(rest())
-  const result = await client.request(readItems('link', {
-    fields: ['id'],
-  }))
+  const client2 = createDirectus('https://fdnd.directus.app').with(rest())
+  const result2 = await client2.request(
+    readItems('link', {
+      fields: ['id'],
+    })
+  )
+  console.log(result2)
   // */
 
   // GraphQL manier

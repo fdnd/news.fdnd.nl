@@ -2,11 +2,12 @@
   import { NewsItem } from '$lib'
   
   let { data } = $props()
+  const links = data.link
   const user = data.user
 </script>
 
 <ol>
-{#each data.link as link}
+{#each links as link}
   <li>
     <NewsItem {link} {user} />
   </li>
