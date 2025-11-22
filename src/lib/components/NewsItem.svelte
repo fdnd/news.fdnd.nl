@@ -6,11 +6,12 @@
 
 <div>
   <div>
-    <UpvoteButton {link} {user}/>
     <NewsLink {link}/>
+    <span><UpvoteButton {link} {user}/></span>
   </div>
   <div>
-    <span>{link.votes.length} hearts by {extractName(link.email)}</span>
+    <span>Post by {extractName(link.email)}</span>
+    <span>{link.votes.length} hearts</span>
     <span><a href="/{link.id}" data-sveltekit-reload>{link.comments.length} comments</a></span>
   </div>
 </div>
@@ -18,5 +19,8 @@
 <style>
  div > div:last-of-type {
     padding-left: .8em;
+  }
+div > div:last-of-type span {
+    display:block;
   }
 </style>
