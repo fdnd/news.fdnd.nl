@@ -15,7 +15,7 @@
 
   button {
     border: 0;
-    height: .8em; /* adjust to control the size */
+    height: 1.2em; /* adjust to control the size */
     aspect-ratio: 1;
     --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
     -webkit-mask-box-image: var(--_m);
