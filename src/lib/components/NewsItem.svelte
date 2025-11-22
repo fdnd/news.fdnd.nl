@@ -18,9 +18,10 @@
 
 <style>
  div > div:last-of-type {
-    padding-left: .8em;
+    /* padding-left: .8em; */
   }
 div > div:last-of-type span {
     display:block;
+    font-size: 0.9em;
   }
 </style>
