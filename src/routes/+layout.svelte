@@ -125,7 +125,7 @@
 	}
 
 	footer p {
-		position: fixed;
+		/* position: fixed; */
 		bottom: 1rem;
 		left: 1rem;
 		margin: 0;
