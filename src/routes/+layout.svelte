@@ -109,7 +109,7 @@
 		gap: var(--radius);
 		position: relative;
 		margin: 0 calc(var(--radius));
-		padding: calc(3 * var(--padding)) var(--padding);
+		padding: calc(2 * var(--padding)) var(--padding);
 		background: var(--background);
 		border-radius: var(--radius);
 	}
