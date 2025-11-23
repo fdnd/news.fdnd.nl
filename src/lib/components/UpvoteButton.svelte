@@ -10,7 +10,7 @@
 
 <style>
   form {
-    display: inline;
+    /* display: inline; */
   }
 
   button {
