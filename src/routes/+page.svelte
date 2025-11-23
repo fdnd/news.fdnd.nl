@@ -19,6 +19,6 @@
     /* padding: 0; */
   }
   ol li {
-    margin-bottom: .5em;
+    margin-bottom: 1.5em;
   }
 </style>
