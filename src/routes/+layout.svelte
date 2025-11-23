@@ -90,9 +90,14 @@
 		transition-delay: calc(var(--total) - var(--i) * 0.1s);
 		text-decoration: none;
 		letter-spacing: -0.03em;
+		border: 0.08em solid black;
+		padding: 0.1em 0.6em;
+		border-radius: 0.2em;
 	}
 	nav a:hover {
-		text-decoration: underline;
+		/* text-decoration: underline; */
+		color: var(--base-color);;
+		background-color: var(--color);
 	}
 	nav button {
 		width: 100%;
