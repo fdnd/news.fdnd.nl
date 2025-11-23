@@ -62,7 +62,7 @@ body {
   color: var(--color);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: clamp(1.25rem, calc(24 / 60 * var(--grid-1)), 2rem);
+  font-size: clamp(1.1rem, calc(24 / 60 * var(--grid-1)), 2rem);
   letter-spacing: -0.02em;
   line-height: 1.33;
 }
