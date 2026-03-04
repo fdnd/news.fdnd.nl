@@ -22,6 +22,7 @@
               mask-border: var(--_m);
     clip-path: polygon(-41% 0,50% 91%, 141% 0);
     background: grey;
+    cursor: pointer;
   }
   button.voted {
     background: hotpink;
